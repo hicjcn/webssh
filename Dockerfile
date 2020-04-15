@@ -8,4 +8,4 @@ RUN pip install -r requirements.txt -i http://pypi.douban.com/simple --trusted-h
 
 CMD ["python", "run.py", "--address=0.0.0.0", "--port=80", "--sslport=443", "--certfile=/code/cert.crt", "--keyfile=/code/cert.key"]
 
-EXPOSE 80, 443
+EXPOSE 80 443
