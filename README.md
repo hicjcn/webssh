@@ -146,6 +146,26 @@ Start up the app
 docker-compose up
 ```
 
+Test up the app
+```
+git fetch && git merge origin/master && docker-compose build && docker-compose up
+```
+
+Build Image
+ 
+Image name is `webssh_web:latest`
+ 
+```
+git fetch && git merge origin/master && docker-compose build
+```
+
+Start a container
+
+ 
+```
+docker run -d -p 80:80 -p 443:443 --name webssh webssh_web:latest
+```
+
 Tear down the app
 ```
 docker-compose down
